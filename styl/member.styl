@@ -1,1 +1,74 @@
 @import 'variables'
+
+.member__avatar
+  width 100%
+  height: auto
+  max-width 320px
+  display block
+  margin auto
+
+.member__title
+  font-family Roboto, sans-serif
+  font-size 1.4rem
+  font-weight bold
+  &_blue
+    color blue
+  &_green
+    color green
+  &_yellow
+    color yellow
+  &_red
+    color red
+
+.member__text
+  font-family Roboto, sans-serif
+  font-size 1rem
+  font-weight normal
+
+.member__screenshot
+  width 100%
+  height: auto
+  display block
+
+.member__contacts
+  list-style none
+  padding: 0;
+  margin: 10px 0
+  overflow: hidden
+
+.member__contact
+  float left
+  &:last-child
+    float right
+
+.member__link
+  font-family Roboto, sans-serif
+  font-size .8rem
+  line-height 1.5rem
+  height 1.5rem
+  display inline-block
+  font-weight: bold
+  color inherit
+  text-decoration none
+  padding: 0 10px
+  margin: 0 5px
+  border-radius 0.2rem
+  transition tt
+  &:hover,
+  &_important
+    float right
+    color white
+    background-color blue
+    transition tt
+
+.member__link_green
+  &:hover
+    background-color green
+
+.member__link_yellow
+  &:hover
+    background-color yellow
+
+.member__link_red
+  &:hover
+    background-color red

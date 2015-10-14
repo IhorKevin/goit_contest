@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/main.styl" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/styl/fonts.styl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/styl/members.styl" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/styl/section.styl" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/styl/variables.styl" charset="UTF-8" />
   </component>

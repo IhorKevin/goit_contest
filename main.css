@@ -37,7 +37,15 @@
   font-weight: bold;
   color: #1c1c1c;
   text-align: center;
-  margin: 0;
+  margin: 1rem auto;
+}
+.section__description {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #1c1c1c;
 }
 html {
   font-size: 16px;

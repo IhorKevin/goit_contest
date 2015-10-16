@@ -1,0 +1,48 @@
+@import 'variables'
+
+.header
+  height 10vh
+  min-height 50px
+  font-family: Roboto, sans-serif
+  font-size 1.2rem
+
+.header__relative
+  position relative
+  overflow hidden
+
+.header__wrap
+  position absolute
+  left 0
+  right 0
+  bottom 0
+  overflow: hidden
+
+.header__menu
+  list-style none
+  padding: 0
+  margin: 0
+  overflow: hidden
+
+.header__link
+  display block
+  padding .5rem 0
+  box-sizing border-box
+  color mtc
+  text-decoration none
+  text-align center
+  border-bottom .3rem solid transparent
+  transition tt
+  &:hover
+    border-bottom .3rem solid blue
+    transition tt
+
+.header__link_logo
+  display inline-block
+  text-align left
+  color blue
+  &:hover
+    border-bottom transparent
+    transition 0
+
+.header__link_red
+  color red

@@ -6,23 +6,43 @@
     <title>Назва</title>
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css"/>
     <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="fontello/css/fontello.css"/>
 
 </head>
 <body>
-    <header class="header">
-        <nav class="container">
-            <ul class="row">
-                <li class="col-md-2 col-md-offset-2">Про нас</li>
-                <li class="col-md-2">Розробники</li>
-                <li class="col-md-2">Портфоліо</li>
-                <li class="col-md-2">Контакти</li>
-            </ul>
-        </nav>
+    <header class="header header__relative" id="webkey">
+        <div class="header__wrap">
+            <nav class="container">
+                <div class="row">
+                    <div class="col-md-2 header__logo"><a href="#webkey" class="header__link header__link_logo">&#60;Web<span class="header__link_red">Key</span>&#62;</a></div>
+                    <ul class="header__menu">
+                        <li class="col-md-2 col-md-offset-1"><a href="#members" class="header__link">Розробники</a></li>
+                        <li class="col-md-2"><a href="#portfolio" class="header__link">Портфоліо</a></li>
+                        <li class="col-md-2"><a href="#about" class="header__link">Про нас</a></li>
+                        <li class="col-md-2"><a href="#contacts" class="header__link">Контакти</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!--INTRO-->
-    <section class="section">
-        <div class="container">Інтро</div>
+    <section id="intro" class="section intro">
+        <div class="container">
+            <div class="intro__wrap">
+                <div class="intro__main col-md-6">
+                    <h1 class="intro__title">WebKey</h1>
+                    <p class="intro__description">
+                        Ми – спільнота фронтенд-розробників. Цей сайт допоможе підібрати найкращого спеціаліста або команду для вирішення ваших
+                        задач.
+                    </p>
+                </div>
+                <a href="#members" class="intro__nav col-md-6">
+                    <span class="intro__text">Обрати свого фронтенд-розробника</span>
+                    <span class="intro__arrow"><i class="icon-angle-down"></i></span>
+                </a>
+            </div>
+        </div>
     </section>
 
     <!--MEMBERS-->
@@ -161,14 +181,14 @@
     </section>
 
     <!--PORTFOLIO-->
-    <section class="section">
+    <section id="portfolio" class="section">
         <div class="container">
             <h2 class="section__title">Портфоліо</h2>
         </div>
     </section>
 
     <!--ABOUT-->
-    <section class="section">
+    <section id="about" class="section">
         <div class="container"><h2 class="section__title">Про нас</h2></div>
     </section>
 

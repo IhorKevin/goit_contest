@@ -29,7 +29,7 @@
   src: url("fonts/Roboto-Italic.ttf");
 }
 .section {
-  padding: 30px 0;
+  padding: 2rem 0;
 }
 .section__title {
   font-family: Roboto, sans-serif;
@@ -259,6 +259,58 @@
   .member__half {
     text-align: center;
   }
+}
+.footer {
+  padding: 2rem 0;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  color: #1c1c1c;
+}
+.footer__intro {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #1c1c1c;
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__list-item {
+  margin-bottom: 0.5rem;
+}
+.footer__text {
+  margin: 1rem 0;
+  color: #9e9e9e;
+  font-weight: 300;
+}
+.footer__contact {
+  display: inline-block;
+  color: #1c1c1c;
+  text-decoration: none;
+  line-height: 1.5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 0.8rem;
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer__contact:hover {
+  color: #fff;
+  background-color: #4285f4;
+}
+.footer__sub {
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 1rem;
 }
 html {
   font-size: 16px;

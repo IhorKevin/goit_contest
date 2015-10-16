@@ -38,8 +38,6 @@
 
 .member__contact
   float left
-  &:last-child
-    float right
 
 .member__link
   font-family Roboto, sans-serif
@@ -56,19 +54,40 @@
   transition tt
   &:hover,
   &_important
-    float right
     color white
-    background-color blue
     transition tt
 
-.member__link_green
-  &:hover
+.member__link_static_blue,
+.member__link_blue:hover
+  background-color blue
+
+.member__link_static_green,
+.member__link_green:hover
     background-color green
 
-.member__link_yellow
-  &:hover
+.member__link_static_yellow,
+.member__link_yellow:hover
     background-color yellow
 
-.member__link_red
-  &:hover
+.member__link_static_red,
+.member__link_red:hover
     background-color red
+
+@media screen and (max-width: 767px)
+  .member__avatar
+    max-width 180px
+  .member__title,
+  .member__text
+    text-align center
+  .member__screenshot
+    max-width 290px
+    margin: auto
+  .member__contacts
+    text-align center
+  .member__contact
+    float none
+    display: inline-block
+  .member__link
+    margin-bottom: 1rem
+  .member__half
+    text-align center

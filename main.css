@@ -619,6 +619,68 @@
     float: none;
   }
 }
+.feedback {
+  margin-top: 2rem;
+}
+.feedback__input {
+  display: block;
+  width: 100%;
+line-height
+}
+.feedback__comment {
+  resize: none;
+}
+.feedback__text {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  color: #1c1c1c;
+}
+.feedback__button {
+  border: 0;
+  background: transparent;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  padding: 0 10px;
+  margin: 0;
+  color: #1c1c1c;
+  float: right;
+}
+.feedback__button:hover {
+  color: #fff;
+  background-color: #4285f4;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+}
+.feedback__half {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .feedback__half {
+    text-align: center;
+  }
+  .feedback__button {
+    float: none;
+  }
+  .feedback__group {
+    text-align: left;
+  }
+}
 html {
   font-size: 16px;
 }

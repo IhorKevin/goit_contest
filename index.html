@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Назва</title>
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css"/>
+    <title>WebKey</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="main.css"/>
     <link rel="stylesheet" href="fontello/css/fontello.css"/>
 
@@ -195,7 +195,7 @@
                     <img src="images/work-1.jpg" alt="" class="work__screen"/>
                     <h3 class="work__name work__name_blue">Лендінги</h3>
                     <p class="work__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum enim esse eum excepturi inventore modi officiis qui suscipit? Aliquid consequatur modi officiis optio possimus quidem quos ratione sunt vero voluptatibus?
+                        Ми розробляємо дизайн під ваш вид діяльності, встановлюємо інтернет-магазин під ключ з усіма необхідними для роботи модулями. Сайт інтернет-магазину дозволить вивести ваш бізнес на вищий рівень, заробляти більше грошей, послужить фундаментом для стрімкого розвитку вашої компанії. Замовте сайт у професіоналів, щоб потім не довелося шкодувати про втрати часу і можливостей для вашого бізнесу!
                     </p>
                     <a href="#" class="work__link work__link_blue">Відкрити</a>
                 </div>
@@ -204,7 +204,10 @@
                     <img src="images/work-2.jpg" alt="" class="work__screen"/>
                     <h3 class="work__name work__name_green">Мобільні додатки</h3>
                     <p class="work__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum enim esse eum excepturi inventore modi officiis qui suscipit? Aliquid consequatur modi officiis optio possimus quidem quos ratione sunt vero voluptatibus?
+                        Розробка додатків для Аndroid для IOS. Створення додатків для цієї платформи відрізняється від розробки сайту. В даному випадку також приділяється увага інтерфейсу – дружньому та інтуїтивно зрозумілому.
+                    </p>
+                    <p class="work__text">
+                        Розробка додатків для смартфонів проводиться в інтегрованому середовищі, яку надає кожна з існуючих платформ і дозволяє виробникам виконувати завдання з програмування, тестування та впровадження.
                     </p>
                     <a href="#" class="work__link work__link_green">Відкрити</a>
                 </div>
@@ -213,11 +216,12 @@
                     <img src="images/work-3.jpg" alt="" class="work__screen"/>
                     <h3 class="work__name work__name_yellow">Інтернет-магазини</h3>
                     <p class="work__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum enim esse eum excepturi inventore modi officiis qui suscipit? Aliquid consequatur modi officiis optio possimus quidem quos ratione sunt vero voluptatibus?
-                    </p>
+                        Розробка лендінгів, що продають з максимальною конверсією. Всі наші landing сторінки проходять обов'язкове тестування на різних пристроях, оптимізовані під мобільні телефони і планшети.                    </p>
+
                     <a href="#" class="work__link work__link_yellow">Відкрити</a>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -239,6 +243,35 @@
                     <img src="images/team.jpg" class="team__photo" alt="WebKey team"/>
                 </div>
             </div>
+            <div class="row feedback">
+                <div class="col-md-6 col-sm-6 feedback__half">
+                    <form id="feedback" method="get" action="">
+                        <div class="form-group feedback__group">
+                            <label for="exampleInputText" class="feedback__label">Ім'я</label>
+                            <input type="text" class="form-control feedback__input" id="exampleInputText" placeholder="Ім'я" name="name" lettersonly="true" minlength="2" required>
+                        </div>
+                        <div class="form-group feedback__group">
+                            <label for="exampleInputEmail1" class="feedback__label">Email</label>
+                            <input type="email" class="form-control feedback__input" id="exampleInputEmail1" placeholder="Email" name="email" required>
+                        </div>
+
+                        <div class="form-group feedback__group">
+                            <label for="ccomment" class="feedback__label">Опишіть ваш проект</label>
+                            <textarea class="form-control feedback__comment" id="ccomment" name="comment" rows="4" required></textarea>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-default feedback__button">Замовити роботу</button>
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <p class="feedback__text">
+                        Наша команда  зв'яжеться з Вами найближчим часом для уточнення всіх деталей та нюансів майбутнього проекту.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -282,6 +315,17 @@
     <!--SCRIPTS-->
     <script src="js/menu.js"></script>
     <script src="js/members.js"></script>
+    <!--<script src="jquery/jquery-2.1.4.min.js"></script>-->
+    <script src="jquery/jquery-1.11.3.min.js"></script>
+    <script src="jquery/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <script>
+
+        $.validator.addMethod( "lettersonly", function( value, element ) {
+            return this.optional( element ) || /^[a-z]+$/i.test( value );
+        }, "Letters only please" );
+
+        $('#feedback').validate();
+    </script>
 
 </body>
 </html>

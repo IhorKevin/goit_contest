@@ -21,6 +21,7 @@
                         <li class="col-md-2"><a href="#about" class="header__link">Про нас</a></li>
                         <li class="col-md-2"><a href="#contacts" class="header__link">Контакти</a></li>
                     </ul>
+                    <button class="header__menu-button" value="x"><i class="icon-menu"></i></button>
                 </div>
             </nav>
         </div>
@@ -184,17 +185,67 @@
     <section id="portfolio" class="section">
         <div class="container">
             <h2 class="section__title">Портфоліо</h2>
+            <div class="row">
+                <p class="section__description col-md-8 col-md-offset-2">
+                    Для роботи над масштабними проектами одного розробника мало. Наш коллектив може виконати будь-яке завдання найкраще та вчасно до дедлайну. Результати командної роботи можна побачити у нашому портфоліо:
+                </p>
+            </div>
+            <div class="row works">
+                <div class="col-md-4 col-sm-4 work">
+                    <img src="images/work-1.jpg" alt="" class="work__screen"/>
+                    <h3 class="work__name work__name_blue">Лендінги</h3>
+                    <p class="work__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum enim esse eum excepturi inventore modi officiis qui suscipit? Aliquid consequatur modi officiis optio possimus quidem quos ratione sunt vero voluptatibus?
+                    </p>
+                    <a href="#" class="work__link work__link_blue">Відкрити</a>
+                </div>
+
+                <div class="col-md-4 col-sm-4 work">
+                    <img src="images/work-2.jpg" alt="" class="work__screen"/>
+                    <h3 class="work__name work__name_green">Мобільні додатки</h3>
+                    <p class="work__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum enim esse eum excepturi inventore modi officiis qui suscipit? Aliquid consequatur modi officiis optio possimus quidem quos ratione sunt vero voluptatibus?
+                    </p>
+                    <a href="#" class="work__link work__link_green">Відкрити</a>
+                </div>
+
+                <div class="col-md-4 col-sm-4 work">
+                    <img src="images/work-3.jpg" alt="" class="work__screen"/>
+                    <h3 class="work__name work__name_yellow">Інтернет-магазини</h3>
+                    <p class="work__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum enim esse eum excepturi inventore modi officiis qui suscipit? Aliquid consequatur modi officiis optio possimus quidem quos ratione sunt vero voluptatibus?
+                    </p>
+                    <a href="#" class="work__link work__link_yellow">Відкрити</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!--ABOUT-->
     <section id="about" class="section">
-        <div class="container"><h2 class="section__title">Про нас</h2></div>
+        <div class="container">
+            <h2 class="section__title">Про нас</h2>
+            <p class="section__description">Нічого зайвого. Тільки фронденд.</p>
+            <div class="row team">
+                <div class="col-md-4">
+                    <p class="team__text">
+                        WebKey - об'єднання фронтенд-розробників, команда професіоналів та однодумців, що працюють у сфері розробки сайтів. Кожен член команди має унікальні сильні сторони та вміння. Це дозволяє гнучко створювати найкращу робочу группу або підібрати спеціаліста під проект.
+                    </p>
+                    <p class="team__text">
+                        Ми не зупиняємось ні на хвилину - розвиваємо свої навички, шукаємо нові таланти та працюємо з найкращими проектами.
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <img src="images/team.jpg" class="team__photo" alt="WebKey team"/>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer" id="contacts">
         <div class="container">
             <div class="row">
+                <h2 class="footer__title">Контакти</h2>
                 <p class="col-md-8 col-md-offset-2 footer__intro">
                     Якщо ви зацікавлені у співпраці з нашими фахівцями або маєте питання, зв'яжіться з нами зручним для вас способом:
                 </p>
@@ -215,7 +266,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <p class="footer__text">
-                        Ми регулярно публікуємо новини у соцмережах, підпшіться на наші сторінки
+                        Ми регулярно публікуємо новини у соціальних мережах, підпишіться на наші сторінки
                     </p>
                     <ul class="footer__list">
                         <li class="footer__list-item"><a href="#" target="_blank" class="footer__contact">Facebook</a></li>
@@ -229,6 +280,7 @@
     </footer>
 
     <!--SCRIPTS-->
+    <script src="js/menu.js"></script>
     <script src="js/members.js"></script>
 
 </body>

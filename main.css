@@ -47,6 +47,11 @@
   margin-bottom: 1rem;
   color: #1c1c1c;
 }
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 1rem 0;
+  }
+}
 .members {
   overflow: hidden;
 }
@@ -266,6 +271,14 @@
   font-size: 1rem;
   color: #1c1c1c;
 }
+.footer__title {
+  font-family: Roboto, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1c1c1c;
+  text-align: center;
+  margin: 1rem auto;
+}
 .footer__intro {
   text-align: center;
   margin-top: 0;
@@ -320,14 +333,12 @@
 }
 .header__relative {
   position: relative;
-  overflow: hidden;
 }
 .header__wrap {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  overflow: hidden;
 }
 .header__menu {
   list-style: none;
@@ -366,14 +377,63 @@
 }
 .header__link_logo:hover {
   border-bottom: transparent;
-  -webkit-transition: 0;
-  -moz-transition: 0;
-  -o-transition: 0;
-  -ms-transition: 0;
-  transition: 0;
 }
 .header__link_red {
   color: #ea4335;
+}
+.header__menu-button {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .header__menu {
+    height: 0;
+    overflow: hidden;
+    z-index: 2;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+  .header__menu_open {
+    height: 65vh;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: rgba(255,255,255,0.9);
+    border-bottom: 0.3rem solid #9e9e9e;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+  .header__link_logo {
+    float: left;
+  }
+  .header__menu-button {
+    display: block;
+    height: 40px;
+    width: 40px;
+    float: right;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    font-size: 2rem;
+    color: #9e9e9e;
+    background-color: transparent;
+  }
+  .header__link {
+    max-width: 300px;
+    margin: 0 auto 1rem auto;
+  }
 }
 .intro {
   position: relative;
@@ -447,6 +507,117 @@
   -o-transform: scaleX(1.5);
   -ms-transform: scaleX(1.5);
   transform: scaleX(1.5);
+}
+@media screen and (max-width: 767px) {
+  .intro__title {
+    font-size: 4rem;
+  }
+  .intro__description {
+    font-size: 1rem;
+  }
+}
+.team {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  color: #1c1c1c;
+  margin-top: 2rem;
+}
+.team__text {
+  margin: 0 0 1rem 0;
+}
+.team__photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.works {
+  margin-top: 1.5rem;
+}
+.work {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  color: #1c1c1c;
+}
+.work__screen {
+  width: 100%;
+}
+.work__name {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.work__name_blue {
+  color: #4285f4;
+}
+.work__name_green {
+  color: #34a853;
+}
+.work__name_yellow {
+  color: #fbbc05;
+}
+.work__link {
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0 10px;
+  color: #1c1c1c;
+  text-decoration: none;
+  line-height: 1.5rem;
+  height: 1.5rem;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  float: right;
+}
+.work__link:hover {
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+}
+.work__link_blue:hover {
+  color: #fff;
+  background-color: #4285f4;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.work__link_green:hover {
+  color: #fff;
+  background-color: #34a853;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.work__link_yellow:hover {
+  color: #fff;
+  background-color: #fbbc05;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .work {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .work:last-child {
+    margin-bottom: 0;
+  }
+  .work__screen {
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+    display: block;
+  }
+  .work__link {
+    float: none;
+  }
 }
 html {
   font-size: 16px;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Webkey</title>
-    <link rel="stylesheet" href="bootstrap/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css"/>
     <link rel="stylesheet" href="main.css"/>
     <link rel="stylesheet" href="fontello/css/fontello.css"/>
 
@@ -246,18 +246,15 @@
             <div class="row feedback">
                 <div class="col-md-6 col-sm-6 feedback__half">
                     <form id="feedback" method="get" action="">
-                        <div class="form-group feedback__group">
-                            <label for="exampleInputText" class="feedback__label">Ім'я</label>
-                            <input type="text" class="form-control feedback__input" id="exampleInputText" placeholder="Ім'я" name="name" lettersonly="true" minlength="2" required>
+                        <div class="feedback__group">
+                            <input type="text" class="form-control feedback__input" id="exampleInputText" placeholder="Ім'я і прізвище" name="name" lettersonly="true" minlength="2" required>
                         </div>
-                        <div class="form-group feedback__group">
-                            <label for="exampleInputEmail1" class="feedback__label">Email</label>
+                        <div class=" feedback__group">
                             <input type="email" class="form-control feedback__input" id="exampleInputEmail1" placeholder="Email" name="email" required>
                         </div>
 
-                        <div class="form-group feedback__group">
-                            <label for="ccomment" class="feedback__label">Опишіть ваш проект</label>
-                            <textarea class="form-control feedback__comment" id="ccomment" name="comment" rows="4" required></textarea>
+                        <div class=" feedback__group">
+                            <textarea class=" feedback__input feedback__comment" id="ccomment" name="comment" rows="4" placeholder="Опишіть завдання, які хочете реалізувати" required></textarea>
 
                         </div>
 
@@ -321,7 +318,7 @@
     <script>
 
         $.validator.addMethod( "lettersonly", function( value, element ) {
-            return this.optional( element ) || /^[a-z]+$/i.test( value );
+            return this.optional( element ) || /^[a-zа-яієї\s]+$/i.test( value );
         }, "Letters only please" );
 
         $('#feedback').validate();

@@ -327,12 +327,29 @@
 }
 .header {
   height: 10vh;
+  width: 100%;
   min-height: 50px;
   font-family: Roboto, sans-serif;
   font-size: 1.2rem;
+  position: fixed;
+  left: 0;
+  z-index: 3;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
 }
-.header__relative {
-  position: relative;
+.header_fixed {
+  height: 50px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0.5rem #9e9e9e;
+  box-shadow: 0 0 0.5rem #9e9e9e;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
 }
 .header__wrap {
   position: absolute;
@@ -340,10 +357,13 @@
   right: 0;
   bottom: 0;
 }
+.header__logo {
+  overflow: hidden;
+}
 .header__menu {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: auto 0;
   overflow: hidden;
 }
 .header__link {
@@ -376,7 +396,7 @@
   color: #4285f4;
 }
 .header__link_logo:hover {
-  border-bottom: transparent;
+  border-bottom: 0.3rem solid transparent;
 }
 .header__link_red {
   color: #ea4335;
@@ -385,7 +405,15 @@
   display: none;
 }
 @media screen and (max-width: 991px) {
+  .header {
+    min-height: 40px;
+  }
+  .header_fixed {
+    left: 0;
+    height: 40px;
+  }
   .header__menu {
+    position: absolute;
     height: 0;
     overflow: hidden;
     z-index: 2;
@@ -399,7 +427,7 @@
     transition: opacity 0.3s;
   }
   .header__menu_open {
-    height: 65vh;
+    height: 100vh;
     width: 100%;
     position: absolute;
     top: 40px;
@@ -415,13 +443,18 @@
     -ms-transition: opacity 0.3s;
     transition: opacity 0.3s;
   }
+  .header__link {
+    max-width: 300px;
+    margin: 0 auto 1rem auto;
+  }
   .header__link_logo {
     float: left;
+    margin-bottom: 0;
   }
   .header__menu-button {
     display: block;
     height: 40px;
-    width: 40px;
+    width: 50px;
     float: right;
     cursor: pointer;
     border: none;
@@ -429,15 +462,22 @@
     font-size: 2rem;
     color: #9e9e9e;
     background-color: transparent;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
   }
-  .header__link {
-    max-width: 300px;
-    margin: 0 auto 1rem auto;
+  .header__menu-button:hover {
+    color: #4285f4;
+  }
+  .body_no-scroll {
+    overflow-y: hidden;
   }
 }
 .intro {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   min-height: 420px;
   font-family: Roboto, sans-serif;
   -webkit-box-sizing: border-box;
@@ -449,7 +489,7 @@
 }
 .intro__main {
   position: absolute;
-  top: -15%;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;

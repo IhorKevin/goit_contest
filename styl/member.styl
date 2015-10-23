@@ -11,14 +11,6 @@
   font-family Roboto, sans-serif
   font-size 1.4rem
   font-weight bold
-  &_blue
-    color blue
-  &_green
-    color green
-  &_yellow
-    color yellow
-  &_red
-    color red
 
 .member__text
   font-family Roboto, sans-serif
@@ -57,37 +49,60 @@
     color white
     transition tt
 
-.member__link_static_blue,
-.member__link_blue:hover
-  background-color blue
+  // Color names
 
-.member__link_static_green,
-.member__link_green:hover
+.members__slide:nth-child(4n+1) .member__title
+  color blue
+
+.members__slide:nth-child(4n+2) .member__title
+  color green
+
+.members__slide:nth-child(4n+3) .member__title
+  color yellow
+
+.members__slide:nth-child(4n+4) .member__title
+  color red
+
+  // Color links
+
+.members__slide:nth-child(4n+1)
+  .member__link:hover, .member__link.member__link_important
+    background-color blue
+
+.members__slide:nth-child(4n+2)
+  .member__link:hover, .member__link.member__link_important
     background-color green
 
-.member__link_static_yellow,
-.member__link_yellow:hover
+.members__slide:nth-child(4n+3)
+  .member__link:hover, .member__link.member__link_important
     background-color yellow
 
-.member__link_static_red,
-.member__link_red:hover
+.members__slide:nth-child(4n+4)
+  .member__link:hover, .member__link.member__link_important
     background-color red
 
 @media screen and (max-width: 767px)
   .member__avatar
     max-width 180px
+
   .member__title,
   .member__text
     text-align center
+    padding 0 1rem
+
   .member__screenshot
     max-width 290px
     margin: auto
+
   .member__contacts
     text-align center
+
   .member__contact
     float none
     display: inline-block
+
   .member__link
     margin-bottom: 1rem
+
   .member__half
     text-align center

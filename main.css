@@ -2,31 +2,31 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/Roboto-Regular.ttf");
+  src: local('Roboto Regular'), local('Roboto-Regular'), url("fonts/Roboto-Regular.ttf") format('truetype');
 }
 @font-face {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/Roboto-Bold.ttf");
+  src: local('Roboto Bold'), local('Roboto-Bold'), url("fonts/Roboto-Bold.ttf") format('truetype');
 }
 @font-face {
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  src: url("fonts/Roboto-Light.ttf");
+  src: local('Roboto Light'), local('Roboto-Light'), url("fonts/Roboto-Light.ttf") format('truetype');
 }
 @font-face {
   font-family: Roboto;
   font-style: normal;
   font-weight: 800;
-  src: url("fonts/Roboto-Black.ttf");
+  src: local('Roboto Black'), local('Roboto-Black'), url("fonts/Roboto-Black.ttf") format('truetype');
 }
 @font-face {
   font-family: Roboto;
   font-style: italic;
   font-weight: 400;
-  src: url("fonts/Roboto-Italic.ttf");
+  src: local('Roboto Italic'), local('Roboto-Italic'), url("fonts/Roboto-Italic.ttf") format('truetype');
 }
 .section {
   padding: 2rem 0;
@@ -689,6 +689,13 @@
   margin-top: 2rem;
   font-family: Roboto, sans-serif;
 }
+.feedback__title {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  color: #1c1c1c;
+  text-align: center;
+  margin: 1rem 0;
+}
 .feedback__input {
   display: block;
   width: 100%;
@@ -854,6 +861,7 @@
   -o-transform: scale(1.4);
   -ms-transform: scale(1.4);
   transform: scale(1.4);
+  cursor: pointer;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -899,6 +907,7 @@
   opacity: 0.7;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
   filter: alpha(opacity=70);
+  cursor: pointer;
 }
 .owl-controls .owl-nav div {
   width: 16px;
